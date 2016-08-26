@@ -23,3 +23,13 @@ class ViewController: UIViewController {
 
 }
 
+class Test: SwiftyUserDefaultsStoreType {
+    enum UserDefaultsStoreKey: String, SwiftyUserDefaultsStoreKeyConvertible {
+        case Test = ""
+        
+        var userDefaultsKeyString: String {
+            return "\(self)." + rawValue
+        }
+    }
+}
+
