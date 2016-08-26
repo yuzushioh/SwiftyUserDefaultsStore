@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
 }
 
-class Test: SwiftyUserDefaultsStoreType {
+class Test: SwiftyUserDefaultsStore {
     enum UserDefaultsStoreKey: String, SwiftyUserDefaultsStoreKeyConvertible {
         case Test = ""
         

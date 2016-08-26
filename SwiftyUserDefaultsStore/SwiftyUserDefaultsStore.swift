@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol SwiftyUserDefaultsStoreType {
+public protocol SwiftyUserDefaultsStore {
     associatedtype UserDefaultsStoreKey: SwiftyUserDefaultsStoreKeyConvertible
     
     static var userDefaults: NSUserDefaults { get }
@@ -34,7 +34,7 @@ public protocol SwiftyUserDefaultsStoreKeyConvertible {
     var userDefaultsKeyString: String { get }
 }
 
-extension SwiftyUserDefaultsStoreType {
+extension SwiftyUserDefaultsStore {
     static var userDefaults: NSUserDefaults {
         return NSUserDefaults.standardUserDefaults()
     }
