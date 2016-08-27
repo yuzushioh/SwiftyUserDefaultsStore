@@ -10,10 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let userState = UserState()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userState.username = "yuzushioh"
+        userState.userId = 12345
+        userState.openAppCount = 90
+        userState.isLoggedIn = false
         
+        print(userState.username)
+        print(userState.userId)
+        print(userState.openAppCount)
+        print(userState.isLoggedIn)
     }
 }
 
@@ -33,6 +43,33 @@ class UserState: SwiftyUserDefaultsStoreType {
         }
         set {
             setNewValue(newValue, forStoreKey: store.username)
+        }
+    }
+    
+    var userId: Int64? {
+        get {
+            return valueForStoreKey(store.userId)
+        }
+        set {
+            setNewValue(newValue, forStoreKey: store.userId)
+        }
+    }
+    
+    var openAppCount: Int {
+        get {
+            return valueForStoreKey(store.openAppCount)
+        }
+        set {
+            setNewValue(newValue, forStoreKey: store.openAppCount)
+        }
+    }
+    
+    var isLoggedIn: Bool {
+        get {
+            return valueForStoreKey(store.isLoggedIn)
+        }
+        set {
+            setNewValue(newValue, forStoreKey: store.isLoggedIn)
         }
     }
 }
