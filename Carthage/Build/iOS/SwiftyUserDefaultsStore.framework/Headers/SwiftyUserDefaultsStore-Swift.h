@@ -101,8 +101,4 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @interface NSUserDefaults (SWIFT_EXTENSION(SwiftyUserDefaultsStore))
 @end
 
-
-@interface NSUserDefaults (SWIFT_EXTENSION(SwiftyUserDefaultsStore))
-@end
-
 #pragma clang diagnostic pop
