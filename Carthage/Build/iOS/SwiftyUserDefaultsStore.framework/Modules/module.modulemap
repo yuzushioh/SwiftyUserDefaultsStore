@@ -1,0 +1,10 @@
+framework module SwiftyUserDefaultsStore {
+  umbrella header "SwiftyUserDefaultsStore.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyUserDefaultsStore.Swift {
+    header "SwiftyUserDefaultsStore-Swift.h"
+}
