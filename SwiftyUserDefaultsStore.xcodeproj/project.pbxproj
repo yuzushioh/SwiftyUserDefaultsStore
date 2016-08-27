@@ -15,6 +15,7 @@
 		2A10B8291D70ADB0000F1178 /* SwiftyUserDefaultsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8281D70ADB0000F1178 /* SwiftyUserDefaultsStoreTests.swift */; };
 		2A10B8341D70ADB1000F1178 /* SwiftyUserDefaultsStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8331D70ADB1000F1178 /* SwiftyUserDefaultsStoreUITests.swift */; };
 		2A10B8421D70AE44000F1178 /* SwiftyUserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8411D70AE44000F1178 /* SwiftyUserDefaultsStore.swift */; };
+		2A10B8461D7161E3000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8451D7161E3000F1178 /* SwiftyUserDefaultsStoreType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2A10B8331D70ADB1000F1178 /* SwiftyUserDefaultsStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsStoreUITests.swift; sourceTree = "<group>"; };
 		2A10B8351D70ADB1000F1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A10B8411D70AE44000F1178 /* SwiftyUserDefaultsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsStore.swift; sourceTree = "<group>"; };
+		2A10B8451D7161E3000F1178 /* SwiftyUserDefaultsStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsStoreType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2A10B8131D70ADB0000F1178 /* AppDelegate.swift */,
 				2A10B8151D70ADB0000F1178 /* ViewController.swift */,
 				2A10B8411D70AE44000F1178 /* SwiftyUserDefaultsStore.swift */,
+				2A10B8451D7161E3000F1178 /* SwiftyUserDefaultsStoreType.swift */,
 				2A10B8171D70ADB0000F1178 /* Main.storyboard */,
 				2A10B81A1D70ADB0000F1178 /* Assets.xcassets */,
 				2A10B81C1D70ADB0000F1178 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A10B8461D7161E3000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */,
 				2A10B8421D70AE44000F1178 /* SwiftyUserDefaultsStore.swift in Sources */,
 				2A10B8161D70ADB0000F1178 /* ViewController.swift in Sources */,
 				2A10B8141D70ADB0000F1178 /* AppDelegate.swift in Sources */,
