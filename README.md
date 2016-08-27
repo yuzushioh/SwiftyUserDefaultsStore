@@ -75,7 +75,7 @@ It would be appreciated to recieve pull requests adding more types🙇
 
 #### Carthage
 
-- Insert github "yuzushioh/SwiftyUserDefaultsStore" to your Cartfile.
+- Insert `github "yuzushioh/SwiftyUserDefaultsStore"` to your Cartfile.
 - Run carthage update.
 
 #### Manually
