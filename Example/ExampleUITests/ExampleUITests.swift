@@ -1,6 +1,6 @@
 //
-//  SwiftyUserDefaultsStoreUITests.swift
-//  SwiftyUserDefaultsStoreUITests
+//  ExampleUITests.swift
+//  ExampleUITests
 //
 //  Created by 福田涼介 on 8/27/16.
 //  Copyright © 2016 yuzushioh. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class SwiftyUserDefaultsStoreUITests: XCTestCase {
+class ExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
