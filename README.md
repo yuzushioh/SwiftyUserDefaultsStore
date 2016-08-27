@@ -1,7 +1,7 @@
 # SwiftyUserDefaultsStore
 
 #### Simple Swift Wrapper for `NSUserDefaults`
-###### ここにDescription
+###### Define your keys in one place, Use value type easily, Get access from everywhere✈️
 
 ## Usage
 **There's only three steps to set up SwiftyUserDefaultsStore:**
@@ -64,5 +64,26 @@ Step 3: Use it wherever you want🎉
   
   userId = response.userId
 ```
+## Features
 
+### Supported types
 
+SwiftyUserDefaultsStore currently supports limited types, like strings, numbers, booleans.
+It would be appreciated to recieve pull requests adding more types🙇
+
+## Installation
+
+#### Carthage
+
+- Insert github "yuzushioh/SwiftyUserDefaultsStore" to your Cartfile.
+- Run carthage update.
+
+#### Manually
+
+- Copy `Sources` to your Xcode project.
+
+## Pull Requests?
+Absolutely!
+
+## License
+__SwiftyUserDefaultsStore__ is available under the MIT license. See LICENSE.txt for details.
