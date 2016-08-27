@@ -31,7 +31,7 @@ public protocol SwiftyUserDefaultsStoreType {
     
     func setNewValue(value: Bool, forStoreKey storeKey: UserDefaultsStoreKey<Bool>)
     func setNewValue(value: Int, forStoreKey storeKey: UserDefaultsStoreKey<Int>)
-    func setNewValue(value: Int64?, forStoreKey storeKey: UserDefaultsStoreKey<Int64>)
+    func setNewValue(value: Int64, forStoreKey storeKey: UserDefaultsStoreKey<Int64>)
     func setNewValue(value: Double, forStoreKey storeKey: UserDefaultsStoreKey<Double>)
     func setNewValue(value: String, forStoreKey storeKey: UserDefaultsStoreKey<String>)
 }
@@ -50,7 +50,11 @@ public extension SwiftyUserDefaultsStoreType {
     }
     
     func valueForStoreKey(storeKey: UserDefaultsStoreKey<Int64?>) -> Int64? {
-        return userDefaults.objectForKey(storeKey.key) as? Int64
+        guard let value = userDefaults.objectForKey(storeKey.key) as? Int else {
+            return nil
+        }
+        
+        return NSNumber(long: value).longLongValue
     }
     
     func valueForStoreKey(storeKey: UserDefaultsStoreKey<Double?>) -> Double? {
@@ -78,11 +82,11 @@ public extension SwiftyUserDefaultsStoreType {
     }
     
     func valueForStoreKey(storeKey: UserDefaultsStoreKey<Int64>) -> Int64 {
-        guard let value = userDefaults.objectForKey(storeKey.key) as? Int64 else {
+        guard let value = userDefaults.objectForKey(storeKey.key) as? Int else {
             return 0
         }
         
-        return value
+        return NSNumber(long: value).longLongValue
     }
     
     func valueForStoreKey(storeKey: UserDefaultsStoreKey<Double>) -> Double {
@@ -136,8 +140,8 @@ public extension SwiftyUserDefaultsStoreType {
         userDefaults.synchronize()
     }
     
-    func setNewValue(value: Int64?, forStoreKey storeKey: UserDefaultsStoreKey<Int64>) {
-        userDefaults.setObject(value.map(NSNumber.init), forKey: storeKey.key)
+    func setNewValue(value: Int64, forStoreKey storeKey: UserDefaultsStoreKey<Int64>) {
+        userDefaults.setObject(NSNumber(longLong: value), forKey: storeKey.key)
         userDefaults.synchronize()
     }
     
