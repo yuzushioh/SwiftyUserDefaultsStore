@@ -15,7 +15,7 @@ Step 1: Define userDefaults keys.
   let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
 ```
 
-Step 2: Create a class that comfirms to SwiftyUserDefaultsStoreType and define properties.
+Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define properties.
 
 ```swift
     var username: String {
