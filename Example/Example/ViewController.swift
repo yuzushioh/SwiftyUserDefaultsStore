@@ -32,6 +32,8 @@ struct UserDefaultsKeyStore {
     let userId = UserDefaultsStoreKey<Int64?>(key: "userId")
     let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount")
     let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
+    
+    static let email = UserDefaultsStoreKey<String>(key: "email")
 }
 
 class UserState: SwiftyUserDefaultsStoreType {
@@ -70,6 +72,15 @@ class UserState: SwiftyUserDefaultsStoreType {
         }
         set {
             setNewValue(newValue, forStoreKey: store.isLoggedIn)
+        }
+    }
+    
+    static var email: String {
+        get {
+            return valueForStoreKey(UserDefaultsKeyStore.email)
+        }
+        set {
+            setNewValue(newValue, forStoreKey: UserDefaultsKeyStore.email)
         }
     }
 }
