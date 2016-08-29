@@ -11,6 +11,7 @@ Step 1: Define userDefaults keys.
 ```swift
   let username = UserDefaultsStoreKey<String>(key: "username") // Returns non-optional value.
   let userId = UserDefaultsStoreKey<Int64?>(key: "userId")     // Returns optional value
+  
   static let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount") // You can use static as well
   static let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
 ```
