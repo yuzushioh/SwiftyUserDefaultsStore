@@ -18,7 +18,10 @@ Step 1: Define userDefaults keys.
 Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define properties.
 
 ```swift
+    // If getter only
     let username = valueForStoreKey(username)
+    
+    // If setter only
     setNewValue(response.username, forStoreKey: username)
     
     var userId: Int64? {
