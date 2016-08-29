@@ -11,21 +11,15 @@ Step 1: Define userDefaults keys.
 ```swift
   let username = UserDefaultsStoreKey<String>(key: "username") // Returns non-optional value.
   let userId = UserDefaultsStoreKey<Int64?>(key: "userId")     // Returns optional value
-  let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount")
-  let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
+  static let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount") // You can use static as well
+  static let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
 ```
 
 Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define properties.
 
 ```swift
-    var username: String {
-        get {
-            return valueForStoreKey(username)
-        }
-        set {
-            setNewValue(newValue, forStoreKey: username)
-        }
-    }
+    let username = valueForStoreKey(username)
+    setNewValue(response.username, forStoreKey: username)
     
     var userId: Int64? {
         get {
@@ -36,16 +30,10 @@ Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define
         }
     }
     
-    var openAppCount: Int {
-        get {
-            return valueForStoreKey(openAppCount)
-        }
-        set {
-            setNewValue(newValue, forStoreKey: openAppCount)
-        }
-    }
+    static let openAppCount = valueForStoreKey(openAppCount)
+    setNewValue(newCount, forStoreKey: openAppCount)
     
-    var isLoggedIn: Bool {
+    static var isLoggedIn: Bool {
         get {
             return valueForStoreKey(isLoggedIn)
         }
