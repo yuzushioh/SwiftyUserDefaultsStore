@@ -17,70 +17,43 @@ class ViewController: UIViewController {
         
         userState.username = "yuzushioh"
         userState.userId = 12345
-        userState.openAppCount = 90
         userState.isLoggedIn = false
         
         print(userState.username)
         print(userState.userId)
-        print(userState.openAppCount)
         print(userState.isLoggedIn)
     }
 }
 
-struct UserDefaultsKeyStore {
-    let username = UserDefaultsStoreKey<String>(key: "username")
-    let userId = UserDefaultsStoreKey<Int64?>(key: "userId")
-    let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount")
-    let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
+class UserState {
+    let usernameKey = StoreKey<String>(key: "username")
+    let userIdKey = StoreKey<Int>(key: "userId")
+    let isLoggedInKey = StoreKey<Bool>(key: "isLoggedIn")
     
-    static let email = UserDefaultsStoreKey<String>(key: "email")
-}
-
-class UserState: SwiftyUserDefaultsStoreType {
-    let store = UserDefaultsKeyStore()
-    
-    var username: String {
+    var username: String? {
         get {
-            return valueForStoreKey(store.username)
+            return usernameKey.value
         }
         set {
-            setNewValue(newValue, forStoreKey: store.username)
+            usernameKey.value = newValue
         }
     }
     
-    var userId: Int64? {
+    var userId: Int {
         get {
-            return valueForStoreKey(store.userId)
+            return userIdKey.value ?? 0
         }
         set {
-            setNewValue(newValue, forStoreKey: store.userId)
-        }
-    }
-    
-    var openAppCount: Int {
-        get {
-            return valueForStoreKey(store.openAppCount)
-        }
-        set {
-            setNewValue(newValue, forStoreKey: store.openAppCount)
+            userIdKey.value = newValue
         }
     }
     
     var isLoggedIn: Bool {
         get {
-            return valueForStoreKey(store.isLoggedIn)
+            return isLoggedInKey.value ?? false
         }
         set {
-            setNewValue(newValue, forStoreKey: store.isLoggedIn)
-        }
-    }
-    
-    static var email: String {
-        get {
-            return valueForStoreKey(UserDefaultsKeyStore.email)
-        }
-        set {
-            setNewValue(newValue, forStoreKey: UserDefaultsKeyStore.email)
+            isLoggedInKey.value = newValue
         }
     }
 }

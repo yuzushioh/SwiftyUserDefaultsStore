@@ -8,9 +8,19 @@
 
 import Foundation
 
-public struct UserDefaultsStoreKey<T> {
+public class StoreKey<T>: UserDefaultsStoreType {
     public let key: String
     public init(key: String) {
         self.key = key
     }
+    
+    public var value: T? {
+        get {
+            return userDefaultsValue()
+        }
+        set {
+            setUserDefaultsValue(newValue)
+        }
+    }
 }
+
