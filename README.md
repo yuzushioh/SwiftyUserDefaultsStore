@@ -9,8 +9,8 @@
 Step 1: Define user Defaults keys.
 
 ```swift
-  let usernameKey = StoreKey<String>(key: "username") // Returns non-optional value.
-  let userIdKey = StoreKey<Int>(key: "userId")     // Returns optional value
+  let usernameKey = StoreKey<String>(key: "username")
+  let userIdKey = StoreKey<Int>(key: "userId")
 ```
 
 Step 2: Use keys to get user defaults value
