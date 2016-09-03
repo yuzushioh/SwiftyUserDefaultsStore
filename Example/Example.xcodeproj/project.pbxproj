@@ -14,15 +14,16 @@
 		2A10B85F1D71A972000F1178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A10B85D1D71A972000F1178 /* LaunchScreen.storyboard */; };
 		2A10B86A1D71A972000F1178 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8691D71A972000F1178 /* ExampleTests.swift */; };
 		2A10B8751D71A972000F1178 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8741D71A972000F1178 /* ExampleUITests.swift */; };
-		2A10B8851D71A9E2000F1178 /* UserDefaultsStoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8831D71A9E2000F1178 /* UserDefaultsStoreKey.swift */; };
-		2A10B8861D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8841D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift */; };
+		2A10B8851D71A9E2000F1178 /* StoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8831D71A9E2000F1178 /* StoreKey.swift */; };
+		2A10B8861D71A9E2000F1178 /* UserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8841D71A9E2000F1178 /* UserDefaultsStoreType.swift */; };
 		2A10B88F1D71A9F7000F1178 /* SwiftyUserDefaultsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A10B88E1D71A9F7000F1178 /* SwiftyUserDefaultsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A10B8961D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A10B88C1D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework */; };
 		2A10B89D1D71A9F7000F1178 /* SwiftyUserDefaultsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B89C1D71A9F7000F1178 /* SwiftyUserDefaultsStoreTests.swift */; };
 		2A10B8A11D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A10B88C1D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework */; };
 		2A10B8A21D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A10B88C1D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2A10B8AA1D71AA15000F1178 /* UserDefaultsStoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8831D71A9E2000F1178 /* UserDefaultsStoreKey.swift */; };
-		2A10B8AB1D71AA1C000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8841D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift */; };
+		2A10B8AA1D71AA15000F1178 /* StoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8831D71A9E2000F1178 /* StoreKey.swift */; };
+		2A10B8AB1D71AA1C000F1178 /* UserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8841D71A9E2000F1178 /* UserDefaultsStoreType.swift */; };
+		2A10B9281D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B9271D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,14 +92,15 @@
 		2A10B8701D71A972000F1178 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A10B8741D71A972000F1178 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		2A10B8761D71A972000F1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A10B8831D71A9E2000F1178 /* UserDefaultsStoreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoreKey.swift; sourceTree = "<group>"; };
-		2A10B8841D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsStoreType.swift; sourceTree = "<group>"; };
+		2A10B8831D71A9E2000F1178 /* StoreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKey.swift; sourceTree = "<group>"; };
+		2A10B8841D71A9E2000F1178 /* UserDefaultsStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoreType.swift; sourceTree = "<group>"; };
 		2A10B88C1D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUserDefaultsStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A10B88E1D71A9F7000F1178 /* SwiftyUserDefaultsStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyUserDefaultsStore.h; sourceTree = "<group>"; };
 		2A10B8901D71A9F7000F1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A10B8951D71A9F7000F1178 /* SwiftyUserDefaultsStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUserDefaultsStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A10B89C1D71A9F7000F1178 /* SwiftyUserDefaultsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsStoreTests.swift; sourceTree = "<group>"; };
 		2A10B89E1D71A9F7000F1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A10B9271D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2A10B8691D71A972000F1178 /* ExampleTests.swift */,
+				2A10B9271D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift */,
 				2A10B86B1D71A972000F1178 /* Info.plist */,
 			);
 			path = ExampleTests;
@@ -201,8 +204,8 @@
 		2A10B8821D71A9E2000F1178 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2A10B8831D71A9E2000F1178 /* UserDefaultsStoreKey.swift */,
-				2A10B8841D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift */,
+				2A10B8831D71A9E2000F1178 /* StoreKey.swift */,
+				2A10B8841D71A9E2000F1178 /* UserDefaultsStoreType.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -430,8 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A10B8861D71A9E2000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */,
-				2A10B8851D71A9E2000F1178 /* UserDefaultsStoreKey.swift in Sources */,
+				2A10B8861D71A9E2000F1178 /* UserDefaultsStoreType.swift in Sources */,
+				2A10B8851D71A9E2000F1178 /* StoreKey.swift in Sources */,
 				2A10B8571D71A972000F1178 /* ViewController.swift in Sources */,
 				2A10B8551D71A972000F1178 /* AppDelegate.swift in Sources */,
 			);
@@ -441,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A10B9281D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift in Sources */,
 				2A10B86A1D71A972000F1178 /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,8 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A10B8AB1D71AA1C000F1178 /* SwiftyUserDefaultsStoreType.swift in Sources */,
-				2A10B8AA1D71AA15000F1178 /* UserDefaultsStoreKey.swift in Sources */,
+				2A10B8AB1D71AA1C000F1178 /* UserDefaultsStoreType.swift in Sources */,
+				2A10B8AA1D71AA15000F1178 /* StoreKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
