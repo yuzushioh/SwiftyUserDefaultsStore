@@ -23,7 +23,7 @@
 		2A10B8A21D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A10B88C1D71A9F7000F1178 /* SwiftyUserDefaultsStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A10B8AA1D71AA15000F1178 /* StoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8831D71A9E2000F1178 /* StoreKey.swift */; };
 		2A10B8AB1D71AA1C000F1178 /* UserDefaultsStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B8841D71A9E2000F1178 /* UserDefaultsStoreType.swift */; };
-		2A10B9281D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B9271D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift */; };
+		2A10B92A1D7B01F8000F1178 /* SwiftyUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10B9271D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -444,7 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A10B9281D7AFDD5000F1178 /* SwiftyUserDefaultsTests.swift in Sources */,
 				2A10B86A1D71A972000F1178 /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A10B92A1D7B01F8000F1178 /* SwiftyUserDefaultsTests.swift in Sources */,
 				2A10B89D1D71A9F7000F1178 /* SwiftyUserDefaultsStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

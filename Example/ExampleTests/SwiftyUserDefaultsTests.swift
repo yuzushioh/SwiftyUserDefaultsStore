@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Example
+@testable import SwiftyUserDefaultsStore
 
 class SwiftyUserDefaultsTests: XCTestCase {
     
