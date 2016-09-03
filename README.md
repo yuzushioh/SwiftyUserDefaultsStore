@@ -6,43 +6,28 @@
 ## Usage
 **There's only three steps to set up SwiftyUserDefaultsStore:**
 
-Step 1: Define userDefaults keys.
+Step 1: Define user Defaults keys.
 
 ```swift
-  let username = UserDefaultsStoreKey<String>(key: "username") // Returns non-optional value.
-  let userId = UserDefaultsStoreKey<Int64?>(key: "userId")     // Returns optional value
-  
-  static let openAppCount = UserDefaultsStoreKey<Int>(key: "openAppCount") // You can use static as well
-  static let isLoggedIn = UserDefaultsStoreKey<Bool>(key: "isLoggedIn")
+  let usernameKey = StoreKey<String>(key: "username") // Returns non-optional value.
+  let userIdKey = StoreKey<Int>(key: "userId")     // Returns optional value
 ```
 
-Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define properties.
+Step 2: Use keys to get user defaults value
 
 ```swift
-    // If getter only
-    let username = valueForStoreKey(username)
+    // Getting user defaults value
+    let username = usernameKey.value
     
-    // If setter only
-    setNewValue(response.username, forStoreKey: username)
+    // Setting user defaults value
+    usernameKey.value = newValue
     
-    var userId: Int64? {
+    var userId: Int {
         get {
-            return valueForStoreKey(userId)
+            return userIdKey.value ?? 0
         }
         set {
-            setNewValue(newValue, forStoreKey: userId)
-        }
-    }
-    
-    static let openAppCount = valueForStoreKey(openAppCount)
-    setNewValue(newCount, forStoreKey: openAppCount)
-    
-    static var isLoggedIn: Bool {
-        get {
-            return valueForStoreKey(isLoggedIn)
-        }
-        set {
-            setNewValue(newValue, forStoreKey: isLoggedIn)
+            userIdKey.value = newValue
         }
     }
 ```
@@ -50,7 +35,7 @@ Step 2: Create a class that comfirms to `SwiftyUserDefaultsStoreType` and define
 Step 3: Use it wherever you want🎉
 
 ```swift
-  if isLoggedIn {
+  if userId != 0 {
     label.text = username
   }
   
@@ -60,7 +45,7 @@ Step 3: Use it wherever you want🎉
 
 ### Supported types
 
-SwiftyUserDefaultsStore currently supports limited types, like strings, numbers, booleans.
+SwiftyUserDefaultsStore currently supports limited types, like String, Int, Bool.
 It would be appreciated to recieve pull requests adding more types🙇
 
 ## Installation
